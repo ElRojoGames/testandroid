@@ -1,5 +1,9 @@
 package com.example.elrojo.testapplication.POJOs;
 
+import android.content.ContentValues;
+
+import com.example.elrojo.testapplication.SQLConstants;
+
 public class User {
     private String id;
     private String name;
@@ -45,6 +49,16 @@ public class User {
         this.email = email;
     }
 
+
+    public ContentValues toValues(){
+        ContentValues contentValues = new ContentValues(4);
+        contentValues.put(SQLConstants.COLUMN_ID, id);
+        contentValues.put(SQLConstants.COLUMN_NAME, name);
+        contentValues.put(SQLConstants.COLUMN_AGE, age);
+        contentValues.put(SQLConstants.COLUMN_EMAIL, email);
+
+        return  contentValues;
+    }
 
 
 }
