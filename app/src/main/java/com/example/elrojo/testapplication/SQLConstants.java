@@ -18,7 +18,11 @@ public class SQLConstants {
             COLUMN_AGE + " INT, " +
             COLUMN_EMAIL + " TEXT " + ");";
 
+    public static final String SEARCH_BY_ID ="id=?";
+
     public static final String SQL_DELETE =
             "DROP TABLE " + tableUsers;
+
+    public static final String[] ALL_COLUMNS = {COLUMN_ID, COLUMN_NAME, COLUMN_AGE, COLUMN_EMAIL};
 
 }

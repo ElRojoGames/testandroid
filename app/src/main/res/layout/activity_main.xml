@@ -8,9 +8,15 @@
     tools:context=".Activities.MainActivity">
 
     <Button
-        android:id="@+id/insert"
+        android:id="@+id/btnActivityInsert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Insertar"/>
+
+    <Button
+        android:id="@+id/btnActivitySearch"
+        android:text="Buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
