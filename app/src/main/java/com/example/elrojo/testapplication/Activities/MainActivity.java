@@ -10,7 +10,7 @@ import com.example.elrojo.testapplication.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private Button insert, search;
+    private Button insert, search, delete;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,9 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         insert = (Button) findViewById(R.id.btnActivityInsert);
         search = (Button) findViewById(R.id.btnActivitySearch);
+        delete = (Button) findViewById(R.id.btnActivityDelete);
 
         insert.setOnClickListener(this);
         search.setOnClickListener(this);
+        delete.setOnClickListener(this);
     }
 
     @Override
@@ -33,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnActivitySearch:
                 intent = new Intent(MainActivity.this, SearchActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btnActivityDelete:
+                intent = new Intent(MainActivity.this, DeleteActivity.class);
                 startActivity(intent);
                 break;
 

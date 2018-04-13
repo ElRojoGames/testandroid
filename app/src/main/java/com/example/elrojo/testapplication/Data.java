@@ -66,4 +66,9 @@ public class Data {
         return usuario;
     }
 
+    public void deleteUser(String id){
+        String[] whereArgs = new String[] {String.valueOf(id)};
+        sqLiteDatabase.delete(SQLConstants.tableUsers, SQLConstants.WHERE_ID_CLAUSE, whereArgs);
+    }
+
 }
