@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Activities.InsertActivity" />
         <activity android:name=".Activities.SearchActivity" />
-        <activity android:name=".Activities.DeleteActivity"></activity>
+        <activity android:name=".Activities.DeleteActivity" />
+        <activity android:name=".Activities.UpdateActivity"></activity>
     </application>
 
 </manifest>

@@ -71,4 +71,10 @@ public class Data {
         sqLiteDatabase.delete(SQLConstants.tableUsers, SQLConstants.WHERE_ID_CLAUSE, whereArgs);
     }
 
+    public void updateUser(String id, ContentValues contentValues){
+        String[] whereArgs = new String[] {String.valueOf(id)};
+        sqLiteDatabase.update(SQLConstants.tableUsers, contentValues, SQLConstants.SEARCH_BY_ID,
+                whereArgs);
+    }
+
 }

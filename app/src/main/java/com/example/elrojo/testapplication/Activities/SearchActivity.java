@@ -38,6 +38,7 @@ public class SearchActivity extends AppCompatActivity {
                 String result = "RESULTADOS:\n"+"Id: "+user.getId()+"\nName: "+user.getName()
                         +"\nAge: "+user.getAge()+"\nEmail:"+user.getEmail();
                 txtAreaResult.setText(result);
+                data.close();
             }
         });
     }
